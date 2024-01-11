@@ -1,0 +1,92 @@
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#54C1FF</color>
+    <color name="colorPrimaryDark">#1D6CBA</color>
+    <color name="colorAccent">#1D6CBA</color>
+    <color name="select_color">#901D6CBA</color>
+    <color name="txt_color">#020607</color>
+    <color name="right_dark">#ff7d7d</color>
+    <color name="wrong_dark">#3cd968</color>
+    <color name="red">#ff7d7d</color>
+    <color name="green">#3cd968</color>
+    <color name="backgroundColor">#F6FBFF</color>
+    <color name="Spinwell140">#EBBEBDFC</color>
+
+    <color name="white_opacity_30">#40FFFFFF</color>
+    <color name="green_accent">#43D477</color>
+    <color name="dark_green">#00BA63</color>
+    <color name="rippleColor">@color/lightGray</color>
+    <color name="lightGray">#F8F8F8</color>
+    <color name="text_color">#2f3133</color>
+    <color name="text_color2">#5E5E5E</color>
+    <color name="text_color3">#A5A5A5</color>
+    <color name="text_color4">#404243</color>
+    <color name="text_color5">#1D2D3A</color>
+    <color name="gray81">#CFCFCF</color>
+    <color name="pageBg">#FAFAFA</color>
+    <color name="gull_gray">#A9AEB2</color>
+    <color name="lightGray2">#A5A5A5</color>
+    <color name="gold">#FFCD4C</color>
+    <color name="light_green">#8FBF50</color>
+    <color name="chartLightGreen">#7DE9A4</color>
+    <color name="darkBlue">#1F3B64</color>
+    <color name="lightRed">#FE7950</color>
+    <color name="lightGreen2">#50BF9D</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="default_status_bar_color">@color/gray</color>
+    <color name="primary_status_bar_color">@color/green_accent</color>
+
+    <color name="bottom_nav_start_color">#218F48</color>
+    <color name="bottom_nav_end_color">#43D477</color>
+    <color name="toolbar_drawer_open_color">#24EF9C</color>
+    //You can change Background color
+    <color name="bg_color">#f4f4f4</color>
+
+    <color name="background_color">#ffffff</color>
+
+    <color name="gray1">#f1f1f1</color>
+    <color name="light_background">#CCF3F5</color>
+    <!-- background color of lifeline bg nd main page bottom bg colors -->
+    <color name="transparent">#00000000</color>
+    <color name="dark_red">#ff634e</color>
+    <color name="off_white">#f4f4f4</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#d4d4d4</color>
+    <color name="dark_gray">#504F4F</color>
+    <color name="correct">#3cd968</color>
+    <color name="incorrect">#ff7d7d</color>
+    <color name="edt_bg">#ecf5f8</color>
+
+    <color name="purple">#9E59E1</color>
+    <color name="purple_light">#F17DC4</color>
+    <color name="sky">#439BD2</color>
+    <color name="sky_light">#73E1C0</color>
+    <color name="orange">#E37743</color>
+    <color name="orange_light">#ED9F3F</color>
+    <color name="blue">#1D6CBA</color>
+    <color name="blue_light">#54C1FF</color>
+    <color name="pink">#C40F8E</color>
+    <color name="pink_light">#FB5293</color>
+    <color name="green_">#3C8346</color>
+    <color name="green_light">#8BD188</color>
+    <color name="red_light">#93291E</color>
+    <color name="red_">#7B0D1E</color>
+    <color name="main_bg">#eeeff3</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="rent_bg">#CC4BA000</color>
+    <color name="line">#EBEBEB</color>
+    <color name="detail_circle_green">#03A9F4</color>
+    <color name="detail_circle_green_light">#334BA000</color>
+    <color name="detail_circle_orange">#F54E21</color>
+    <color name="detail_circle_orange_light">#33f54f21</color>
+</resources>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cat_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/otoBattle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/padding_15"
+    android:layout_marginEnd="@dimen/padding_15"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:elevation="8dp"
+    app:cardCornerRadius="@dimen/margin_20dp"
+    card_view:cardElevation="7dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/backimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu_slideshow"
+            tools:ignore="ContentDescription" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bcurvegradient_cat_blue">
+
+            <TextView
+                android:id="@+id/tvOneToOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/iran_sansweb_medium"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_oto_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOneToOne"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/iran_sans_web"
+                android:text="@string/name"
+                android:textColor="#a7c5f4"
+                android:textDirection="rtl"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adview"
+       >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ContainerGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-90dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="2dp"
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardUseCompatPadding="false"
+                        card_view:elevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/margin_10dp"
+                                    android:background="@drawable/round_green_bg"
+                                    android:fontFamily="@font/iran_sans_web"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:text="30000 تومان"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+
+
+                                <TextView
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="4dp"
+                                    android:gravity="center"
+                                    android:text="تیشرت"
+                                    android:fontFamily="@font/iran_sans_web"
+                                    android:textColor="@color/gray"
+                                    android:textSize="10sp" />
+
+                                <ImageView
+                                    android:id="@+id/image_rating"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_new_coins" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_gravity="right"
+                                android:singleLine="true"
+                                android:text="@string/no_item_found"
+                                android:fontFamily="@font/iran_sans_web"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layoutDirection="rtl"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center|start"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_menu_camera" />
+
+                                <TextView
+                                    android:id="@+id/textAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:singleLine="true"
+                                    android:text="@string/no_item_found"
+                                    android:textColor="@color/gray"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layoutDirection="rtl"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center|start"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_menu_camera" />
+
+                                <TextView
+                                    android:id="@+id/textPhone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:singleLine="true"
+                                    android:text="@string/no_item_found"
+                                    android:textColor="@color/gray"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_line_detail_gradient" />
+
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_line_detail_gradient" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="اطلاعات"
+                                android:fontFamily="@font/iran_sans_web"
+                                android:textColor="@color/black"
+                                android:layoutDirection="rtl"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="40dp"
+                                android:layout_height="2dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/orange" />
+
+                            <TextView
+                                android:id="@+id/contetnt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginStart="4dp"
+                                android:gravity="right"
+                                android:text="تیشرت"
+                                android:fontFamily="@font/iran_sans_web"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_line_detail_gradient" />
+
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <ImageView
+                        android:id="@+id/color"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/circle_orange"
+                        android:contentDescription="@string/app_name"
+                        android:elevation="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_contest_quiz" />
+
+                    <ImageView
+                        android:id="@+id/buy"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@+id/color"
+                        android:background="@drawable/circle_green"
+                        android:contentDescription="@string/app_name"
+                        android:elevation="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_contest_quiz" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/adview"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</RelativeLayout>

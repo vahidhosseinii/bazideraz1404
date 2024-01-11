@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">bazideraz1404</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">تنظیمات</string>
+
+    <string name="menu_home">خانه</string>
+    <string name="menu_gallery">پروفایل</string>
+    <string name="menu_slideshow">/</string>
+    <string name="name">نام</string>
+    <string name="zero">0</string>
+    <string name="title">عنوان باکس</string>
+    <string name="ok">باشه</string>
+    <string name="loading">لطفا منتظر بمانید</string>
+    <string name="otp_msg">کدفعالسازی ارسال شده را وارد کنید</string>
+    <string name="enter_otp">کدفعالسازی</string>
+    <string name="verify">تأیید</string>
+    <string name="property_desc">توضیحات</string>
+    <string name="no_item_found">موردی وجود ندارد</string>
+    <string name="help">راهنما</string>
+    <string name="logout">خروج</string>
+    <string name="textdel">متن دلنوشته</string>
+</resources>

@@ -1,0 +1,10 @@
+{ "urlBase": "file:///data/data/images/",
+ "type": "spherical2", 
+ "keep": "all", 
+ "sensorialRotation": true, 
+ "images": 
+ {"preview": "plt1_0.jpg","image": "pl1_0.jpg"}, 
+ "scrolling":{"enabled": true,"minDistanceToEnableScrolling": 30}, 
+ "camera":{"keep": "all | ~atvRange | ~rotation | ~fov","atvMin": -90.0,"atvMax": 90.0,"vLookAt": 0.0,"hLookAt": 180.0}, 
+ "hotspots":[ 
+{ "id": 1,"atv": -45,"ath": 33.75,"width": 0.07,"height": 0.07,"image": "hotspot.png","alpha": 0.8,"overAlpha": 1.0,	"onClick": "lookAt(-45, 33.75, true); load('file:///data/data/ir.molkaseman.rahian/images/rah_1_1.data', true, BLEND(2.0, 1.0), 0.0, 190.0)" }  ] } 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30.0dip"
+            android:layout_below="@id/imageView1"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/imageView_menu"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/menu_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="150.0dip"
+                android:layout_height="150.0dip"
+                android:layout_marginTop="15.0dip"
+                android:src="@drawable/title"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout33"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip"
+            android:layout_marginTop="-20.0dip"
+            android:layout_above="@id/imageView2"
+            android:layout_alignParentLeft="true">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="250.0dip"
+                    android:layout_height="50.0dip"
+                    android:src="@drawable/menu_title"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#ffffffff"
+                    android:fontFamily="@font/iran_sans_web"
+                    android:gravity="center"
+                    android:id="@+id/textView_title"
+                    android:paddingTop="10.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/ImageView01"
+                    android:layout_alignRight="@id/ImageView01"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30.0dip"
+            android:layout_above="@id/relativeLayout33"
+            android:layout_below="@id/relativeLayout1"
+            android:layout_alignParentLeft="true">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

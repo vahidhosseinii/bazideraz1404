@@ -28,7 +28,7 @@ public class SplashActivity extends Activity {
         handler = new Handler();
         handler.postDelayed(() -> {
             if (Session.isLogin(SplashActivity.this)) {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, mainslider.class);
                 intent.putExtra("type", "default");
                 startActivity(intent);
                 finish();

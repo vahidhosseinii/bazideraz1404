@@ -88,7 +88,7 @@ public class verify extends Activity {
                                 jsonobj.getString(Constant.mobile),
                                 jsonobj.getString(Constant.PROFILE));
 
-                        Intent i = new Intent(this, MainActivity.class);
+                        Intent i = new Intent(this, mainslider.class);
                         i.putExtra("type", "default");
                         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(i);
